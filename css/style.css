@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: black;
+}
+
+.nav_estilo {
+    background-image: linear-gradient(to right, black, rgb(99, 0, 0));
+}
+
+.navLogo {
+    width: 70px;
+    transition: all 0.4s;
+}
+
+.navLogo:hover {
+    width: 75px;
+}
+
+.negritaTitulo {
+    font-weight: 700;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px red, 0 0 30px red, 2px -2px 2px rgba(255,0,0,0);
+}
+
+.nav-link:hover {
+    text-shadow: 0 0 10px red;
+}
+
+.navbar-toggler:hover {
+    box-shadow: 0 0 15px red; ;
+}
+
+/* Estilo Main */
+
+.main {
+    height: max-content;
+    background-color:white
+}
+
+.main h1 {
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 0.5rem 2rem;
+}
+
+.main h1:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.212), rgba(255, 0, 0, 0.5) );
+}
+
+.main form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.main form fieldset {
+    padding: 2rem;
+}
+
+.centrarCaja {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Estilo Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(99, 0, 0), black);
+    color: aliceblue;
+}
+
+.botonNegro {
+    background-color: black;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 5px;
+    transition: all, 1s;
+}
+
+.botonNegro:hover {
+    background-image: linear-gradient(to top, black, red);
+
+    color: #FFF;
+    border-radius: 5px;
+}
+
+/* Media queries adicionales */
+@media (max-width: 576px) {
+
+    .footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer p {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+}
