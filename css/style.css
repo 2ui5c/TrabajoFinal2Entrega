@@ -115,6 +115,87 @@
     transform: scale(0.95,0.95)
 }
 
+/* Main Preguntas */
+
+.contenedor_comocomprar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comoComprar {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: 2px solid black;
+    width: fit-content;
+    border-radius: 20px 20px;
+    overflow: hidden;
+    gap: 5px;
+}
+
+.comoComprar p {
+    margin-top: 0.7rem;
+    line-height: 3rem;
+}
+
+.comoComprar__1 {
+    padding: 3vh 3vw;
+    width: 80vw;
+    display: flex;
+    height: 20vh;
+    font-size: 2rem;
+    background-image: linear-gradient(to left, yellow, white);
+    align-items: center;
+}
+
+.comoComprar__1 p, .comoComprar__3 p {
+    text-align: right;
+}
+
+.comoComprar__2 {
+    padding: 3vh 3vw;
+    width: 80vw;
+    display: flex;
+    flex-flow: row-reverse;
+    height: 20vh;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, greenyellow, white);
+    align-items: center;
+}
+
+.comoComprar__3 {
+    padding: 3vh 3vw;
+    width: 80vw;
+    display: flex;
+    height: 20vh;
+    font-size: 2rem;
+    background-image: linear-gradient(to left, violet, white);
+    align-items: center;
+    text-align: right;
+}
+
+.comoComprar__4 {
+    padding: 3vh 3vw;
+    width: 80vw;
+    display: flex;
+    flex-flow: row-reverse;
+    height: 20vh;
+    font-size: 2rem;
+    background-image: linear-gradient(to right, blue, white);
+    align-items: center;
+}
+
+.comoComprar__num {
+    font-size: 6rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Fin Main Preguntas */
+
 /* Estilo Footer */
 .footer {
     display: flex;
@@ -141,7 +222,6 @@
 
 /* Media queries adicionales */
 @media (max-width: 576px) {
-
     .footer {
         flex-direction: column-reverse;
         text-align: center;
@@ -149,5 +229,78 @@
     .footer p {
         font-size: 0.8rem;
         margin-top: 0.5rem;
+    }
+    .comoComprar p {
+        margin-top: 0.3rem;
+        line-height: 1rem;
+    }
+    
+    .comoComprar__num {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .comoComprar__1 {
+        height: 15vh;
+        font-size: 1.2rem;
+    }
+    
+    .comoComprar__2 {
+        height: 15vh;
+        font-size: 1.2rem;
+    }
+    
+    .comoComprar__3 {
+        height: 15vh;
+        font-size: 1.2rem;
+    }
+    
+    .comoComprar__4 {
+        height: 15vh;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:577px) and (max-width: 768px) {
+    .footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer p {
+        font-size: 0.9rem;
+        margin-top: 0.6rem;
+    }
+    .comoComprar p {
+        margin-top: 0.4rem;
+        line-height: 1.1rem;
+    }
+    
+    .comoComprar__num {
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .comoComprar__1 {
+        height: 16vh;
+        font-size: 1.3rem;
+    }
+    
+    .comoComprar__2 {
+        height: 16vh;
+        font-size: 1.3rem;
+    }
+    
+    .comoComprar__3 {
+        height: 16vh;
+        font-size: 1.3rem;
+    }
+    
+    .comoComprar__4 {
+        height: 16vh;
+        font-size: 1.3rem;
     }
 }
